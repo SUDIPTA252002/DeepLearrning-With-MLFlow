@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/ML/MLops/mlruns/0/f81816233310471cb0546a0a60343473/artifacts
+end_time: 1721402900618
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f81816233310471cb0546a0a60343473
+run_name: debonair-shoat-583
+run_uuid: f81816233310471cb0546a0a60343473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721402859951
+status: 3
+tags: []
+user_id: User

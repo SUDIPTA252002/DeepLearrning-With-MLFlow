@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/ML/MLops/mlruns/0/6eb38beea520408ba5c13b5d63ff4bae/artifacts
+end_time: 1721397968104
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6eb38beea520408ba5c13b5d63ff4bae
+run_name: gentle-grub-918
+run_uuid: 6eb38beea520408ba5c13b5d63ff4bae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721397896932
+status: 3
+tags: []
+user_id: User

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/ML/MLops/mlruns/0/8564fc164e374b3f96929ce1cca21f7b/artifacts
+end_time: 1721398118626
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8564fc164e374b3f96929ce1cca21f7b
+run_name: defiant-chimp-701
+run_uuid: 8564fc164e374b3f96929ce1cca21f7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721398103333
+status: 3
+tags: []
+user_id: User

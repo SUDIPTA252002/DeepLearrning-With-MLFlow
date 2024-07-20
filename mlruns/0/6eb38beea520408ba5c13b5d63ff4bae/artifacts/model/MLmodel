@@ -1,0 +1,32 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.0
+mlflow_version: 2.14.3
+model_size_bytes: 858
+model_uuid: 901e5a9c892549c887d413eb84aef11f
+run_id: 6eb38beea520408ba5c13b5d63ff4bae
+signature:
+  inputs: '[{"type": "double", "name": "fixed acidity", "required": true}, {"type":
+    "double", "name": "volatile acidity", "required": true}, {"type": "double", "name":
+    "citric acid", "required": true}, {"type": "double", "name": "residual sugar",
+    "required": true}, {"type": "double", "name": "chlorides", "required": true},
+    {"type": "double", "name": "free sulfur dioxide", "required": true}, {"type":
+    "double", "name": "total sulfur dioxide", "required": true}, {"type": "double",
+    "name": "density", "required": true}, {"type": "double", "name": "pH", "required":
+    true}, {"type": "double", "name": "sulphates", "required": true}, {"type": "double",
+    "name": "alcohol", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-19 14:05:01.206051'
