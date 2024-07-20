@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/ML/MLops/mlruns/0/e12554b59dc54683ba15500b30d0d914/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e12554b59dc54683ba15500b30d0d914
+run_name: righteous-shark-655
+run_uuid: e12554b59dc54683ba15500b30d0d914
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721497709650
+status: 1
+tags: []
+user_id: User

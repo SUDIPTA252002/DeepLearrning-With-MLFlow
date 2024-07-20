@@ -3,6 +3,13 @@ import sys
 import numpy as np
 import pandas as pd
 import warnings
+
+import dagshub
+dagshub.init(repo_owner='sudipta.mahato.ece25',
+             repo_name='DeepLearrning-With-MLFlow',
+             mlflow=True)
+
+             
 warnings.filterwarnings("ignore")
 from urllib.parse import urlparse
 
@@ -61,14 +68,12 @@ with mlflow.start_run():
     mlflow.log_metric("mae",mae)
     mlflow.log_metric("rmse",rmse)
 
-    predictions=lr.predict(X_train)
-
-    signature=infer_signature(X_train,predictions)
-
+    remote_server_uri="https://dagshub.com/sudipta.mahato.ece25/DeepLearrning-With-MLFlow.mlflow"
+    mlflow.set_tracking_uri(remote_server_uri)
 
     tracking_url_type_store=urlparse(mlflow.get_tracking_uri()).scheme    
 
     if tracking_url_type_store!="file":
-        mlflow.sklearn.log_model(lr,"model",registered_model_name="ElasticNetWineModel",signature=signature)
+        mlflow.sklearn.log_model(lr,"model",registered_model_name="ElasticNetWineModel")
     else:
-         mlflow.sklearn.log_model(lr,"model",signature=signature)
+        mlflow.sklearn.log_model(lr,"model",signature=signature)
