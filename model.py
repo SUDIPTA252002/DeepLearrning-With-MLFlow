@@ -9,7 +9,7 @@ dagshub.init(repo_owner='sudipta.mahato.ece25',
              repo_name='DeepLearrning-With-MLFlow',
              mlflow=True)
 
-             
+
 warnings.filterwarnings("ignore")
 from urllib.parse import urlparse
 
@@ -76,4 +76,4 @@ with mlflow.start_run():
     if tracking_url_type_store!="file":
         mlflow.sklearn.log_model(lr,"model",registered_model_name="ElasticNetWineModel")
     else:
-        mlflow.sklearn.log_model(lr,"model",signature=signature)
+        mlflow.sklearn.log_model(lr,"model")
